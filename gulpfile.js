@@ -9,6 +9,9 @@ const mocha = require('gulp-mocha');
   gulp.watch - Watch files/folders for changes
 */
 
+
+
+
 gulp.task('travis', () => {
   gulp.src('./src/test/index.spec.js', {read: false})
     .pipe(mocha({reporter: 'nyan'}))
